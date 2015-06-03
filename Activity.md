@@ -8,3 +8,5 @@
 ## 1/2
 
 * Set up command line tools for evaluating exercises (~2h)
+* Put my SICP work into a git repository and published it on GitHub (~10m)
+* Wrote a README file for the git repository documenting my SICP workflow (2h, 50m)
