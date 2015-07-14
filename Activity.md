@@ -18,3 +18,11 @@
 ## 6/19
 
 * Did exercises 1.4–1.6 (~1h, 30m)
+
+## 7/4
+
+* Worked on exercise 1.7 (~1h)
+
+## 7/14
+
+* Finished exercise 1.7 (~1h, 30m)
