@@ -26,3 +26,7 @@
 ## 7/14
 
 * Finished exercise 1.7 (~1h, 30m)
+
+## 7/18
+
+* Did exercise 1.8 (25m)
