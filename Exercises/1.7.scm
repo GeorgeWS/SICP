@@ -85,7 +85,7 @@
 ;; Here is how this might look:
 
 (define (good-enough? guess previous-guess)
-(< (abs (/ (- guess previous-guess) guess)) 0.001))
+  (< (abs (/ (- guess previous-guess) guess)) 0.001))
 
 (define (sqrt-iter guess previous-guess x)
   (if (good-enough? guess previous-guess)
