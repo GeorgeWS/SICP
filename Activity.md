@@ -17,7 +17,7 @@
 
 ## 6/19
 
-* Did exercises 1.4–1.6 (~1h, 30m)
+* Read 1.1.7 and did exercises 1.4–1.6 (~1h, 30m)
 
 ## 7/4
 
