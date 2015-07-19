@@ -9,7 +9,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
   Release 9.2 || Microcode 15.3 || Runtime 15.7 || SF 4.41 || LIAR/C 4.118
   Edwin 3.116
 
-1 ]=> ; Exercise 1.10: The following procedure computes a mathematical function called Ackermann‚Äôs function.
+1 ]=> ; Exercise 1.10: The following procedure computes a mathematical function called Ackermann’s function.
 
 (define (A x y)
   (cond ((= y 0) 0)
@@ -48,7 +48,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; The value of (A 1 10) is‚Ä¶
+;; The value of (A 1 10) is…
 
 (A 1 10)
 ;Value: 1024
@@ -110,7 +110,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 1 ]=> 1024
 ;Value: 1024
 
-1 ]=> ;; The value of (A 2 4) is‚Ä¶
+1 ]=> ;; The value of (A 2 4) is…
 
 (A 2 4)
 ;Value: 65536
@@ -197,7 +197,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 1 ]=> 65536
 ;Value: 65536
 
-1 ]=> ;; The value of (A 3 3) is‚Ä¶
+1 ]=> ;; The value of (A 3 3) is…
 
 (A 3 3)
 ;Value: 65536
@@ -235,7 +235,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 
 ;; And now the last two, again, with no substitution, just to see how pretty all the recursion is:
 
-;; The value of (A 2 4) is‚Ä¶
+;; The value of (A 2 4) is…
 
 (A 2 4)
 ;Value: 65536
@@ -375,7 +375,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 1 ]=> 65536
 ;Value: 65536
 
-1 ]=> ;; The value of (A 3 3) is‚Ä¶
+1 ]=> ;; The value of (A 3 3) is…
 
 (A 3 3)
 ;Value: 65536
@@ -641,9 +641,9 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-9 error> ;; ‚Ä¶etc.
+9 error> ;; …etc.
 ;; after expanding (n - 1) times, expression will be (A 1 1) preceeded by (n - 1) copies of "(A 0 ":
-‚
+�
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 9) => Return to read-eval-print level 9.
@@ -656,7 +656,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-10 error> Ä
+10 error> �
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 10) => Return to read-eval-print level 10.
@@ -670,11 +670,11 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-11 error> ¶
-;Unbound variable: |¬¶|
+11 error> �
+;Unbound variable: |¦|
 ;To continue, call RESTART with an option number:
-; (RESTART 13) => Specify a value to use instead of |¬¶|.
-; (RESTART 12) => Define |¬¶| to a given value.
+; (RESTART 13) => Specify a value to use instead of |¦|.
+; (RESTART 12) => Define |¦| to a given value.
 ; (RESTART 11) => Return to read-eval-print level 11.
 ; (RESTART 10) => Return to read-eval-print level 10.
 ; (RESTART 9) => Return to read-eval-print level 9.
@@ -691,7 +691,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ;Value: 16
 
 12 error> ;; reduce like so (n - 1) times:
-‚
+�
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 12) => Return to read-eval-print level 12.
@@ -707,7 +707,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-13 error> Ä
+13 error> �
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 13) => Return to read-eval-print level 13.
@@ -724,11 +724,11 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-14 error> ¶
-;Unbound variable: |¬¶|
+14 error> �
+;Unbound variable: |¦|
 ;To continue, call RESTART with an option number:
-; (RESTART 16) => Specify a value to use instead of |¬¶|.
-; (RESTART 15) => Define |¬¶| to a given value.
+; (RESTART 16) => Specify a value to use instead of |¦|.
+; (RESTART 15) => Define |¦| to a given value.
 ; (RESTART 14) => Return to read-eval-print level 14.
 ; (RESTART 13) => Return to read-eval-print level 13.
 ; (RESTART 12) => Return to read-eval-print level 12.
@@ -747,7 +747,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 15 error> (A 0 (A 0 (A 0 2)))
 ;Value: 16
 
-15 error> ‚
+15 error> �
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 15) => Return to read-eval-print level 15.
@@ -766,7 +766,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-16 error> Ä
+16 error> �
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 16) => Return to read-eval-print level 16.
@@ -786,11 +786,11 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-17 error> ¶
-;Unbound variable: |¬¶|
+17 error> �
+;Unbound variable: |¦|
 ;To continue, call RESTART with an option number:
-; (RESTART 19) => Specify a value to use instead of |¬¶|.
-; (RESTART 18) => Define |¬¶| to a given value.
+; (RESTART 19) => Specify a value to use instead of |¦|.
+; (RESTART 18) => Define |¦| to a given value.
 ; (RESTART 17) => Return to read-eval-print level 17.
 ; (RESTART 16) => Return to read-eval-print level 16.
 ; (RESTART 15) => Return to read-eval-print level 15.
@@ -812,7 +812,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 18 error> (A 0 (A 0 4))
 ;Value: 16
 
-18 error> ‚
+18 error> �
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 18) => Return to read-eval-print level 18.
@@ -834,7 +834,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-19 error> Ä
+19 error> �
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 19) => Return to read-eval-print level 19.
@@ -857,11 +857,11 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-20 error> ¶
-;Unbound variable: |¬¶|
+20 error> �
+;Unbound variable: |¦|
 ;To continue, call RESTART with an option number:
-; (RESTART 22) => Specify a value to use instead of |¬¶|.
-; (RESTART 21) => Define |¬¶| to a given value.
+; (RESTART 22) => Specify a value to use instead of |¦|.
+; (RESTART 21) => Define |¦| to a given value.
 ; (RESTART 20) => Return to read-eval-print level 20.
 ; (RESTART 19) => Return to read-eval-print level 19.
 ; (RESTART 18) => Return to read-eval-print level 18.
@@ -886,8 +886,8 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 21 error> (A 0 8)
 ;Value: 16
 
-21 error> ;; ‚Ä¶etc.
-;; final answer will 2^n
+21 error> ;; …etc.
+;; the final answer will be 2^n
 
 ;; Mathematical expression:
 ;; g(n) = 2^n
@@ -1069,9 +1069,9 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-26 error> ;; ‚Ä¶etc.
+26 error> ;; …etc.
 ;; after expanding (n - 1) times, expression will be (A 2 1) preceeded by (n - 1) copies of "(A 1 ":
-‚
+�
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 26) => Return to read-eval-print level 26.
@@ -1101,7 +1101,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-27 error> Ä
+27 error> �
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 27) => Return to read-eval-print level 27.
@@ -1132,11 +1132,11 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-28 error> ¶
-;Unbound variable: |¬¶|
+28 error> �
+;Unbound variable: |¦|
 ;To continue, call RESTART with an option number:
-; (RESTART 30) => Specify a value to use instead of |¬¶|.
-; (RESTART 29) => Define |¬¶| to a given value.
+; (RESTART 30) => Specify a value to use instead of |¦|.
+; (RESTART 29) => Define |¦| to a given value.
 ; (RESTART 28) => Return to read-eval-print level 28.
 ; (RESTART 27) => Return to read-eval-print level 27.
 ; (RESTART 26) => Return to read-eval-print level 26.
@@ -1170,7 +1170,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ;Value: 65536
 
 29 error> ;; reduce like so (omitting intermediate steps by substituting mathematical definition of g(n) for (A 1 n)) (n - 1) times:
-‚
+�
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 29) => Return to read-eval-print level 29.
@@ -1203,7 +1203,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-30 error> Ä
+30 error> �
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 30) => Return to read-eval-print level 30.
@@ -1237,11 +1237,11 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-31 error> ¶
-;Unbound variable: |¬¶|
+31 error> �
+;Unbound variable: |¦|
 ;To continue, call RESTART with an option number:
-; (RESTART 33) => Specify a value to use instead of |¬¶|.
-; (RESTART 32) => Define |¬¶| to a given value.
+; (RESTART 33) => Specify a value to use instead of |¦|.
+; (RESTART 32) => Define |¦| to a given value.
 ; (RESTART 31) => Return to read-eval-print level 31.
 ; (RESTART 30) => Return to read-eval-print level 30.
 ; (RESTART 29) => Return to read-eval-print level 29.
@@ -1277,7 +1277,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 32 error> (A 1 (A 1 (A 1 2)))
 ;Value: 65536
 
-32 error> ‚
+32 error> �
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 32) => Return to read-eval-print level 32.
@@ -1313,7 +1313,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-33 error> Ä
+33 error> �
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 33) => Return to read-eval-print level 33.
@@ -1350,11 +1350,11 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-34 error> ¶
-;Unbound variable: |¬¶|
+34 error> �
+;Unbound variable: |¦|
 ;To continue, call RESTART with an option number:
-; (RESTART 36) => Specify a value to use instead of |¬¶|.
-; (RESTART 35) => Define |¬¶| to a given value.
+; (RESTART 36) => Specify a value to use instead of |¦|.
+; (RESTART 35) => Define |¦| to a given value.
 ; (RESTART 34) => Return to read-eval-print level 34.
 ; (RESTART 33) => Return to read-eval-print level 33.
 ; (RESTART 32) => Return to read-eval-print level 32.
@@ -1394,7 +1394,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ;Value: 65536
 
 35 error> ;; (A 1 2) = g(2) = 2^2 = 4
-‚
+�
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 35) => Return to read-eval-print level 35.
@@ -1433,7 +1433,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-36 error> Ä
+36 error> �
 ;Illegal character: #\U+80
 ;To continue, call RESTART with an option number:
 ; (RESTART 36) => Return to read-eval-print level 36.
@@ -1473,11 +1473,11 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ; (RESTART 2) => Return to read-eval-print level 2.
 ; (RESTART 1) => Return to read-eval-print level 1.
 
-37 error> ¶
-;Unbound variable: |¬¶|
+37 error> �
+;Unbound variable: |¦|
 ;To continue, call RESTART with an option number:
-; (RESTART 39) => Specify a value to use instead of |¬¶|.
-; (RESTART 38) => Define |¬¶| to a given value.
+; (RESTART 39) => Specify a value to use instead of |¦|.
+; (RESTART 38) => Define |¦| to a given value.
 ; (RESTART 37) => Return to read-eval-print level 37.
 ; (RESTART 36) => Return to read-eval-print level 36.
 ; (RESTART 35) => Return to read-eval-print level 35.
@@ -1520,11 +1520,11 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ;Value: 65536
 
 38 error> ;; (A 1 4) = g(4) = 2^4 = 16
-;; ‚Ä¶etc.
-;; the final answer will be 2^^n (that's "2 double arrow n", or tetration‚Äîgood thing Adam showed me arrow notation in calculus!)
+;; …etc.
+;; the final answer will be 2^^n (that's "2 double arrow n", or tetration—good thing Adam showed me arrow notation in calculus!)
 
-;; h(n) = ‚Ä¶g(g(g(2)))‚Ä¶ (where g is recursively applied (n - 1) times to 2)
-;; h(n) = ‚Ä¶2^(2^(2^2))
+;; h(n) = …g(g(g(2)))… (where g is recursively applied (n - 1) times to 2)
+;; h(n) = …2^(2^(2^2))
 ;; h(n) = 2^^n
 
 ;; Example:
@@ -1575,7 +1575,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; Note that‚Ä¶
+;; Note that…
 
 ;; (A 0 n) = 2n = 2(0 arrows)n
 ;; (A 1 n) = 2^n = 2(1 arrow)n

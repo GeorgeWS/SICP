@@ -234,7 +234,7 @@
 …(A 0 (A 0 4))
 …(A 0 8)
 ;; …etc.
-;; final answer will 2^n
+;; the final answer will be 2^n
 
 ;; Mathematical expression:
 ;; g(n) = 2^n
