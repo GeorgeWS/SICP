@@ -48,20 +48,16 @@
 ;; Iterative:
 
 (define (f n)
-(f-iter 0 0 0 0 n))
-
-(define (f-iter a f-prev f-2-prev f-3-prev n)
-  (if (= (- a 1) n)
-    f-prev
-    (cond ((= a 0) (f-iter 1 0 0 0 n))
-          ((= a 1) (f-iter 2 1 0 0 n))
-          ((= a 2) (f-iter 3 2 1 0 n))
-          (else (f-iter
-                  (+ a 1)
-                  (+ f-prev (* 2 f-2-prev) (* 3 f-3-prev))
-                  f-prev
-                  f-2-prev
-                  n)))))
+  (define (iter i f-of-i-minus-1 f-of-i-minus-2 f-of-i-minus-3)
+    (if (= n (- i 1))
+      f-of-i-minus-1
+      (iter (+ i 1)
+            (if (< i 3)
+              i
+              (+ f-of-i-minus-1 (* 2 f-of-i-minus-2) (* 3 f-of-i-minus-3)))
+            f-of-i-minus-1
+            f-of-i-minus-2)))
+  (iter 0 0 0 0))
 
 ;; Examples:
 

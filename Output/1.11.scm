@@ -34,7 +34,10 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 
 1 ]=> ;; Examples:
 
-(f 1)
+(f 0)
+;Value: 0
+
+1 ]=> (f 1)
 ;Value: 1
 
 1 ]=> (f 3)
@@ -65,26 +68,33 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ;; Iterative:
 
 (define (f n)
-(f-iter 0 0 0 0 n))
+  (define (iter i f-of-i-minus-1 f-of-i-minus-2 f-of-i-minus-3)
+    (if (= n (- i 1))
+      f-of-i-minus-1
+      (iter (+ i 1)
+            (if (< i 3)
+              i
+              (+ f-of-i-minus-1 (* 2 f-of-i-minus-2) (* 3 f-of-i-minus-3)))
+            f-of-i-minus-1
+            f-of-i-minus-2)))
+  (iter 0 0 0 0))
 ;Value: f
 
-1 ]=> (define (f-iter a f-prev f-2-prev f-3-prev n)
-  (if (= (- a 1) n)
-    f-prev
-    (cond ((= a 0) (f-iter 1 0 0 0 n))
-          ((= a 1) (f-iter 2 1 0 0 n))
-          ((= a 2) (f-iter 3 2 1 0 n))
-          (else (f-iter
-                  (+ a 1)
-                  (+ f-prev (* 2 f-2-prev) (* 3 f-3-prev))
-                  f-prev
-                  f-2-prev
-                  n)))))
-;Value: f-iter
+1 ]=> ;; Evaluation process:
 
-1 ]=> ;; Examples:
+;; Rules:
+;; if i<3: i=i+1, prev=i, 2-prev=prev, 3-prev=2-prev
+;; if i≥3: i=i+1, prev=(prev+2*2-prev+3*3-prev)
 
-(f 1)
+;; Iterations for n=5:
+;; i=0, prev=0, 2-prev=0, 3-prev=0: i=i+1
+
+;; Examples:
+
+(f 0)
+;Value: 0
+
+1 ]=> (f 1)
 ;Value: 1
 
 1 ]=> (f 3)
@@ -93,6 +103,6 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 1 ]=> (f 5)
 ;Value: 25
 
-1 ]=> 
+1 ]=>
 End of input stream reached.
 Moriturus te saluto.
