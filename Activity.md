@@ -36,4 +36,6 @@
 
 # 7/21
 
+* Read 1.2.2 (50m)
 * Worked through counting change example in 1.2.2 (35m)
+* Did exercise 1.11 (2h)
