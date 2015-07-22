@@ -187,7 +187,7 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 ;; Here is how this might look:
 
 (define (good-enough? guess previous-guess)
-(< (abs (/ (- guess previous-guess) guess)) 0.001))
+  (< (abs (/ (- guess previous-guess) guess)) 0.001))
 ;Value: good-enough?
 
 1 ]=> (define (sqrt-iter guess previous-guess x)
@@ -202,96 +202,17 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 
 1 ]=> ;; We can see the improvement when we run the previous examples:
 
-(sqrt 0.00000004)
-;Value: 2.0000000000164927e-4
-
-1 ]=> ;; We can see how much the result is off by squaring it:
+;; First, a small number:
 
 (square (sqrt 0.00000004))
 ;Value: 4.000000000065971e-8
 
-1 ]=> ;; The result is off by a lot because it is "good enough" according to the rule that the squared guess must be within 0.001 of the radicand (i.e. x, the argument to sqrt). Since the radicand is smaller than 0.001 to begin with, determining whether a guess is correct requires a much higher level of precision.
+1 ]=> ;; And now, the large numbers that were causing problems:
 
-;; Here's what happens when sqrt is used on larger and larger numbers:
-
-(square (sqrt 9))
-;Value: 9.000000008381903
-
-1 ]=> ; These ones are all off by smaller and smaller relative amounts
-(square (sqrt 99))
-;Value: 99.00000000243162
-
-1 ]=> (square (sqrt 999))
-;Value: 999.0003665696138
-
-1 ]=> (square (sqrt 9999))
-;Value: 9999.000050924209
-
-1 ]=> (square (sqrt 99999))
-;Value: 99999.00000224594
-
-1 ]=> (square (sqrt 999999))
-;Value: 999999.306600531
-
-1 ]=> (square (sqrt 9999999))
-;Value: 9999999.039958466
-
-1 ]=> ; This one is correct
-(square (sqrt 99999999))
-;Value: 99999999.00164928
-
-1 ]=> ; These ones are all off by smaller and smaller amounts again
-(square (sqrt 999999999))
-;Value: 1000000251.1736685
-
-1 ]=> (square (sqrt 9999999999))
-;Value: 10000000030.206465
-
-1 ]=> (square (sqrt 99999999999))
-;Value: 100000000000.20636
-
-1 ]=> (square (sqrt 999999999999))
-;Value: 1000000206921.4945
-
-1 ]=> ; These ones are all correct
-(square (sqrt 9999999999999))
-;Value: 10000000024298.584
-
-1 ]=> (square (sqrt 99999999999999))
-;Value: 100000000000878.12
-
-1 ]=> (square (sqrt 999999999999999))
-;Value: 1000000169391289.7
-
-1 ]=> (square (sqrt 9999999999999999))
-;Value: 10000000018865008.
-
-1 ]=> (square (sqrt 99999999999999999))
+(square (sqrt 99999999999999999))
 ;Value: 100000000000638220.
 
-1 ]=> ; This one hangs and never exits
-(square (sqrt 999999999999999999))
-;Value: 1.0000001383367711e18
-
-1 ]=> ; These ones use scientific notation
-(square (sqrt 9999999999999999999))
-;Value: 1.0000000014601712e19
-
-1 ]=> (square (sqrt 99999999999999999999))
-;Value: 1.0000000000046159e20
-
-1 ]=> (square (sqrt 1))
-;Value: 1.
-
-1 ]=> ; This one is correct
-(square (sqrt 1000000000))
-;Value: 1000000252.1736706
-
-1 ]=> ; Slightly off
-(square (sqrt 100000000000))
-;Value: 100000000001.20638
-
-1 ]=> ; Slightly off
+1 ]=> ; No longer hangs
 (square (sqrt 10000000000000))
 ;Value: 10000000024299.582
 
@@ -305,5 +226,6 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 
 1 ]=> ; No longer hangs
 
+; Now we can improve the precision of our answers simply by decreasing the acceptible percent error in good-enough? from 0.001 to something more precise, say, 0.00001. Importantly, this will now increase the precision of answers *across all scales*.
 End of input stream reached.
 Moriturus te saluto.

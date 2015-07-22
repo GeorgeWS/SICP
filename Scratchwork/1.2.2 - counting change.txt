@@ -39,7 +39,6 @@ How many ways are there to make change for 10¢ with nickels and pennies? -> 1+2
 	|			|	how many ways are there to make change for -1¢ with only pennies? a<0 -> 0
 	|			+
 	|			how many ways are there to make change for 0¢ with only pennies? -> a=0 -> 1
-	|
 	+
 	how many ways are there to make change for 5¢ with nickels and pennies? -> 1+1 -> 2
 		|

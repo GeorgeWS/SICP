@@ -49,6 +49,6 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 1 ]=> (cube-root 1881365963625)
 ;Value: 12345.
 
-1 ]=>
+1 ]=> 
 End of input stream reached.
 Moriturus te saluto.

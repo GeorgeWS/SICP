@@ -25,7 +25,6 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 
 ;; Recursive:
 
-
 (define (f n)
   (if (< n 3)
     n

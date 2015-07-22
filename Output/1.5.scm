@@ -14,9 +14,9 @@ Image saved on Tuesday June 2, 2015 at 12:20:18 AM
 (define (p) (p))
 ;Value: p
 
-1 ]=> (define (test x y) 
-  (if (= x 0) 
-      0 
+1 ]=> (define (test x y)
+  (if (= x 0)
+      0
       y))
 ;Value: test
 
