@@ -1,0 +1,62 @@
+Variables:
+
+n = number of kinds of coins
+a = amount to change
+d = denomination of first kind of coin
+
+Algorithm:
+
+The number of ways to change amount a using n kinds of coins equals…
+- the number of ways to change amount a using all but the first kind of coin, plus
+- the number of ways to change amount a-d using all n kinds of coins.
+
+Degenerate rules:
+
+- if a=0, there is 1 way to change a
+- if a<0, there are 0 ways to change a
+- if n=0, there are 0 ways to change a
+
+Example:
+
+How many ways are there to make change for 10¢ with nickels and pennies? -> 1+2 -> 3
+	|
+	how many ways are there to make change for 10¢ with only pennies? -> 0+1 -> 1
+	|	|
+	|	how many ways are there to make change for 10¢ with no coins? -> n=0 -> 0
+	|	+
+	|	how many ways are there to make change for 9¢ with only pennies? -> 0+1 -> 1
+	|		|
+	|		how many ways are there to make change for 9¢ with no coins? -> n=0 -> 0
+	|		+
+	|		how many ways are there to make change for 8¢ with only pennies? -> 0+1 -> 1
+	|			|
+	|			…
+	|			|
+	|			how many ways are there to make change for 1¢ with no coins? -> n=0 -> 0
+	|			|	|
+	|			|	how many ways are there to make change for 0¢ with no coins? -> n=0 -> 0
+	|			|	+
+	|			|	how many ways are there to make change for -1¢ with only pennies? a<0 -> 0
+	|			+
+	|			how many ways are there to make change for 0¢ with only pennies? -> a=0 -> 1
+	|
+	+
+	how many ways are there to make change for 5¢ with nickels and pennies? -> 1+1 -> 2
+		|
+		how many ways are there to make change for 5¢ with only pennies? -> 0+1 -> 1
+		|	|
+		|	how many ways are there to make change for 5¢ with no coins? -> n=0 -> 0
+		|	+
+		|	how many ways are there to make change for 4¢ with only pennies? -> 0+1 -> 1
+		|		|
+		|		…
+		|		|
+		|		how many ways are there to make change for 1¢ with no coins? -> n=0 -> 0
+		|		|	|
+		|		|	how many ways are there to make change for 0¢ with no coins? -> n=0 -> 0
+		|		|	+
+		|		|	how many ways are there to make change for -1¢ with only pennies? a<0 -> 0
+		|		+
+		|		how many ways are there to make change for 0¢ with only pennies? -> a=0 -> 1
+		+
+		how many ways are there to make change for 0¢ with nickels and pennies? -> a=0 -> 1

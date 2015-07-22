@@ -33,3 +33,7 @@
 * Read 1.1.8–1.2.1 (50m)
 * Did exercise 1.9 (25m)
 * Did exercise 1.10 (1h, 25m)
+
+# 7/21
+
+* Worked through counting change example in 1.2.2 (35m)
